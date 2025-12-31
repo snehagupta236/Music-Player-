@@ -16,7 +16,7 @@ let songIndex = 2;
 
 function loadSong(song) {
   title.innerText = song;
-  audio.src = `music/${song}.mp3`;
+  audio.src = `songs/${song}.mp3`;
   cover.src = `images/${song}.jpg`;
 }
 
@@ -74,3 +74,4 @@ function setProgress(e) {
 progressContainer.addEventListener("click", setProgress);
 
 audio.addEventListener("ended", nextSong);
+
